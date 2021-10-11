@@ -1,12 +1,206 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;900&family=Ubuntu:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap');
+
+body {
+    font-family: "Montserrat", sans-serif;
+}
 
 #title {
     background-color: #ff4c68;
+    color: white;
+}
+
+#title .container-fluid {
+    padding: 3% 10% 8%
 }
 
 h1 {
     font-family: "Montserrat", sans-serif;
-    font-size: 3rem;
+    font-size: 3.5rem;
     font-weight: 900;
     line-height: 1.5;
+}
+
+/*Navigation Bar*/
+
+.navbar {
+    padding: 0 0 4.5rem 0;
+}
+
+.nav-item {
+    padding: 0 1rem;
+}
+
+.nav-link {
+    font-size: 1.5rem;
+    font-family: "Montserrat", serif;
+}
+
+.navbar-brand {
+    font-family: "Ubuntu", sans-serif;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+/*Download Buttons*/
+.btn-download {
+    margin: 8% 2% 8% 0;
+}
+
+/*Title Image*/
+
+.img-title {
+    width: 60%;
+    position: absolute;
+    left: 10%;
+    transform: rotate(20deg);
+}
+
+@media (max-width: 991.9px) {
+    .img-title {
+        position: static;
+        transform: rotate(0);
+        width: 40%;
+    }
+
+    #title {
+        text-align: center;
+    }
+}
+
+
+@media img-title {
+
+}
+
+.fa-check-circle, .fa-bullseye, .fa-heart {
+    color: #ef8172;
+}
+
+.fa-check-circle:hover, .fa-bullseye:hover, .fa-heart:hover {
+    color: #ff4c68;
+}
+
+#features {
+    position: relative;
+    background-color: white;
+    padding: 7% 15%;
+    z-index: 1;
+}
+
+#features h3 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 20px 0 10px;
+}
+
+/*Testimonial Section*/
+
+#testimonials {
+    background-color: #ef8172;
+    color: white;
+    text-align: center;
+}
+
+#testimonials h2 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 3rem;
+    font-weight: bold;
+    line-height: 1.5;
+}
+
+.testimonial-img {
+    border-radius: 100%;
+    margin: 20px;
+    width: 10%;
+}
+
+.carousel-item {
+    padding: 7% 15%;
+}
+
+#press {
+    background-color: #ef8172;
+    text-align: center;
+    padding-bottom: 5%;
+}
+
+@media (max-width: 992px) {
+    #testimonials h2 {
+        font-size: 2rem;
+    }
+}
+
+.press-logo {
+    width: 15%;
+    margin: 20px 20px 50px;
+}
+
+/*Pricing*/
+
+#pricing {
+    font-family: "Ubuntu", sans-serif;
+    line-height: 1.5;
+    padding: 7% 10%;
+    text-align: center;
+}
+
+#pricing h2, h3 {
+    font-weight: bold;
+}
+
+.card-deck {
+    margin-top: 7%;
+}
+
+.card-body {
+    padding: 10% 15%;
+}
+
+
+@media (min-width: 555px) and (max-width: 992px) {
+    .card-deck {
+        display: block;
+        /*padding: 50px 30%;*/
+    }
+
+    .card-deck .card {
+        margin: 50px 10%;
+    }
+}
+
+#pricing .btn {
+    margin: 0 auto 30px;
+    width: 50%;
+}
+
+/*CTA*/
+
+#cta {
+    background-color: #ff4c68;
+    color: white;
+    text-align: center;
+    padding: 7% 15% 4%;
+}
+
+#cta h3 {
+    font-size: 3.5rem;
+}
+
+#cta .btn-download {
+    margin: 5% 1%;
+}
+
+/*Footer*/
+
+#footer {
+    background-color: white;
+    color: black;
+    padding: 8% 30%;
+    text-align: center;
+}
+
+.footer-font-awesome {
+    color: black;
 }
